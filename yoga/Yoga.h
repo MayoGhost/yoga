@@ -111,7 +111,9 @@ WIN_EXPORT void YGNodeMarkDirty(YGNodeRef node);
 // `YGCalculateLayout` will cause the recalculation of each and every node.
 WIN_EXPORT void YGNodeMarkDirtyAndPropogateToDescendants(YGNodeRef node);
 
+#ifdef DEBUG
 WIN_EXPORT void YGNodePrint(YGNodeRef node, YGPrintOptions options);
+#endif
 
 WIN_EXPORT bool YGFloatIsUndefined(float value);
 
